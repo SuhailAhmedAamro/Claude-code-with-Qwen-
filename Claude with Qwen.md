@@ -1,6 +1,6 @@
 # How to Use Claude Code with Qwen Models for Free
 
-## â­ Requirements  
+##  Requirements  
 Before beginning, make sure the following are installed:
 
 - **Qwen CLI** (installed and authenticated)  
@@ -8,7 +8,7 @@ Before beginning, make sure the following are installed:
 
 ---
 
-## ðŸ§© Qwen CLI Installation  
+##  Qwen CLI Installation  
 Install the latest Qwen Code CLI:
 
 ```bash
@@ -23,7 +23,7 @@ qwen --version
 
 ---
 
-## ðŸš€ Step 1: Install Claude Code Router  
+##  Step 1: Install Claude Code Router  
 Install Claude Code and the router globally:
 
 ```bash
@@ -32,7 +32,7 @@ npm install -g @anthropic-ai/claude-code @musistudio/claude-code-router
 
 ---
 
-## ðŸ”‘ Step 2: Get Your Qwen Access Token  
+##  Step 2: Get Your Qwen Access Token  
 
 ```
 C:\Users\PC_USER\.qwen\oauth_creds.json
@@ -53,7 +53,7 @@ Copy your **access_token** â€” youâ€™ll add it to the router config.
 
 ---
 
-## ðŸ“ Step 3: Create Required Folders  
+## Step 3: Create Required Folders  
 Run inside your WSL terminal:
 
 ```bash
@@ -62,7 +62,7 @@ mkdir -p ~/.claude-code-router ~/.claude
 
 ---
 
-## âš™ï¸ Step 4: Create the Router Configuration  
+##  Step 4: Create the Router Configuration  
 Paste this to generate the config file:
 
 ```bash
@@ -101,7 +101,7 @@ EOF
 
 ---
 
-## â–¶ï¸ Step 5: Start Using Claude Code with Qwen  
+##  Step 5: Start Using Claude Code with Qwen  
 Restart the router:
 
 ```bash
@@ -122,17 +122,17 @@ Test:
 
 ---
 
-## ðŸ”„ Handling 401 Token Errors  
+##  Handling 401 Token Errors  
 If your Qwen OAuth token expires:
 
-### 1ï¸âƒ£ Reauthenticate  
+###  Reauthenticate  
 If tokens donâ€™t match, delete `oauth_creds.json` and run:
 
 ```bash
 qwen
 ```
 
-### 2ï¸âƒ£ Update your router config  
+###  Update your router config  
 ```powershell
 notepad "$env:USERPROFILE\.claude-code-router\config.json"
 ```
